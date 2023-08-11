@@ -1,0 +1,11 @@
+[package]
+name = "host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+methods = { path = "../methods" }
+rand = "0.8"
+risc0-zkvm = { version = "0.16.1" }
+serde = "1.0"
+stateful_core = { path = "../core" }
