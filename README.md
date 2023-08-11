@@ -1,11 +1,11 @@
-# Stateful zkVM experiment
+# Stateful zkVM Experiment
 
 This repo explores exposing an application's read-only state to a usually stateless zkVM runtime.
 
 The host code generates a random list of numbers to be sorted over multiple runs of the guest program through the zkVM.
 The guest code implements a naive sorting algorithm that requests state from the host machine via a callback, then outputs instructions for the state transition function. These transitions are applied post-verification, and eventually sort our state from least to greatest.
 
-An example output follows:
+An example output:
 
 ```
 $ cargo run
